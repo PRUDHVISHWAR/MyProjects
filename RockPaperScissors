@@ -1,0 +1,39 @@
+print("rock paper and scissors game")
+print("enter a valid input either rock ,paper,scissors \nenter exit for quitting the game")
+from random import randint
+options = ["Rock","Paper","Scissors"]
+
+while True:
+    computer_choice = options[randint(0,2)].lower()
+    user_choice = input("enter your choice :  ").lower().strip()
+    if computer_choice == user_choice:
+        print("computer choice :" ,computer_choice)
+        print("oops! it's a tie ")
+    elif user_choice == "rock":
+        if computer_choice == "paper":
+            print("computer choice :" ,computer_choice)
+            print("You lost! computer win ")
+        else:
+            print("computer choice :" ,computer_choice)
+            print("You win! computer lost ")
+    elif user_choice == "paper":
+        if computer_choice == "rock":
+            print("computer choice :" ,computer_choice)
+            print("You won! computer lost ")
+        else:
+            print("computer choice :" ,computer_choice)
+            print("You lost! computer won ")
+    elif user_choice == "scissors":
+        if computer_choice == "paper":
+            print("computer choice :" ,computer_choice)
+            print("You won! computer lost ")
+        else:
+            print("computer choice :" ,computer_choice)
+            print("You lost! computer won ")
+    elif user_choice == "exit":
+        print("the game ended")
+        break
+    else:
+        print("invalid input please try again with a valid input")
+    
+    
