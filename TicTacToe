@@ -1,4 +1,4 @@
-#tic tac toe
+#tic tac toe project
 board = [""]*9
 def print_board():
     print(f"|{board[0]}| |{board[1]}| |{board[2]}|")
